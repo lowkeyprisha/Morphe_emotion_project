@@ -19,20 +19,7 @@ MORPHĒ is a full-stack creative web application that converts raw human emotion
 
 ---
 
-## 🧠 Emotion → Art Map
 
-| Emotion | Palette | Particle | Frequency | Waveform |
-|---------|---------|----------|-----------|----------|
-| Joy | Gold / Coral | Burst | 528 Hz | Sine |
-| Sadness | Indigo / Periwinkle | Rain | 174 Hz | Sine |
-| Anger | Red / Crimson | Shatter | 396 Hz | Sawtooth |
-| Fear | Deep Purple | Pulse | 285 Hz | Triangle |
-| Calm | Teal / Seafoam | Float | 432 Hz | Sine |
-| Love | Rose / Pink | Orbit | 639 Hz | Sine |
-| Wonder | Cyan / Magenta | Cosmos | 963 Hz | Sine |
-| Melancholy | Dusty Rose | Drift | 256 Hz | Sine |
-
----
 
 ## 🚀 Quick Start
 
@@ -54,7 +41,7 @@ npm run dev
 
 ### 3. Use It
 - Type anything in the left panel — stream of consciousness, keywords, sentences
-- Press **MORPH** or **⌘ + Enter**
+- Press **MORPH** or ** Enter**
 - Click **◎ SOUND** to enable ambient tones
 - Click any color swatch to copy the hex code
 
@@ -95,27 +82,6 @@ morphe/
 | `GET`  | `/api/emotions` | List all emotion categories |
 | `GET`  | `/api/health` | Server health check |
 
-### Example
-```bash
-curl -X POST http://localhost:3001/api/analyze \
-  -H "Content-Type: application/json" \
-  -d '{"text": "I feel so lost and empty today"}'
-```
-
-```json
-{
-  "dominant": "sadness",
-  "label": "Sadness",
-  "palette": ["#2D3561", "#4A5899", "#6B7FC4", "#8FA4D8", "#B4C5E4"],
-  "accent": "#6B7FC4",
-  "frequency": 174,
-  "waveform": "sine",
-  "intensity": 0.3,
-  "quote": "The word 'happy' would lose its meaning if it were not balanced by sadness. — Carl Jung",
-  "confidence": 0.8
-}
-```
-
 ---
 
 ## 🛠️ Tech Stack
@@ -128,9 +94,3 @@ curl -X POST http://localhost:3001/api/analyze \
 - **Fonts** — Bebas Neue (display) + Cormorant Garamond (body) + JetBrains Mono (code)
 
 ---
-
-## 🎨 Design Philosophy
-
-Brutalist-organic dark aesthetic. Typography-first. Motion as meaning. Every visual element encodes emotional data — nothing is decorative for decoration's sake.
-
-The background transitions take 2 full seconds. The colors don't just change — they *breathe* into the new state.
